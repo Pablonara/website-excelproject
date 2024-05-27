@@ -10,20 +10,34 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
+    <style>
+    body {
+        margin: 0;
+      }
+      
+      .parent {
+        max-height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+      }
+      
+      .child {
+        scroll-snap-align: center;
+        height: 100vh;
+      }
+      
+      
+      </style>
 </head>
 
 
-<body>
+<body style="background-color: #808080;">
 
     <div class="navbar">
         <!-- add a navbar with animations here -->
 
     </div>
-    <!-- <center>
-        <button onclick="document.location='indexkart.html' ">Go Back<br>
-        </button>
-    </center> -->
+
     <div class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
@@ -39,30 +53,34 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
-    <header>
-        <!-- <div class="background-image"> -->
-            <div class="background-video">
+    <div class="parent">
+<div class="child">
+    <div class="container">
+        <header style="max-width:100%;">
+            <!-- <div class="background-image"> -->
+            <div class="background-video" style="max-width:100%;">
                 <video autoplay="" muted loop="" playsinline="true">
-                    <source src="assets/gokart1080.mp4" type="video/mp4">
+                    <source src="assets/0000-0196.mp4" type="video/mp4" style="max-width:100%;">
                     Your browser does not support the video tag <!-- backup warning-->
-                </video>
-            </div>
-            
-        <!-- </div> -->
-        <div id="textContainer">
-            <h1 class="textappear"><span>V</span><span>e</span><span>l</span><span>o</span><span>c</span><span>i</span><span>k</span><span>i</span><span>d</span><span>s</span></h1>
-        </div>
-    </header>
-    <!-- <p>About Velocikids</p> -->
+                </video></div>
 
-    <!-- <center>
-        <p1>Velocikids is the premier go karting site in the Lower Mainland aimed at children aged 7-17. We provide
-            world-renowned instructors, state-of-the-art go karts, and award-winning indoor and outdoor tracks. Located
-            in downtown Port Moody, we are the go-to site for all your speed needs!</p1>
-    </center> -->
+            <!-- </div> -->
+            <div id="textContainer" style="max-width:100%;">
+                <h1 class="textappear">
+                    <span>F</span><span>u</span><span>r</span><span>n</span><span>i</span><span>t</span><span>u</span><span>r</span><span>e</span><span>.</span>
+                </h1></div>
+</div>
+<div class="class">
 
-    <center> <img src="assets/art2.png" alt="helmet1" width="19.7%"> </center>
-
+    <div style="background-color: #f0f0f0; display: flex; align-items: center; height: fit-content; scroll-snap-align: start;" class="pastTitle">
+        <div style="flex: 1;" style="scroll-snap-align: start;">
+            <h2>Used everywhere.</h2></div>
+        <div style="flex: 1; display: flex; justify-content: center; align-items: center;" style="scroll-snap-align: start;">
+            <img src="assets/untitled.png" alt="Image" style="max-width: 100%; max-height: 100%;"></div>
+    </div>
+</div>
+</div>
+</div>
 </body>
 <script src="https://unpkg.com/split-type"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>

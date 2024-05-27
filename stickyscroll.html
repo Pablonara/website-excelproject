@@ -1,0 +1,25 @@
+<head>
+<style>
+body {
+  margin: 0;
+}
+
+.parent {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.child {
+  scroll-snap-align: center;
+  height: 100vh;
+}
+
+
+</style>
+</head>
+<div class='parent'>
+    <div class='child'>Section 1</div>
+    <div class='child'>Section 2</div>
+    <div class='child'>Section 3</div>
+  </div>

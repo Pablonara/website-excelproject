@@ -11,13 +11,13 @@ h2 {
   font-style: normal;
   color: #000000;
   font-size: 3rem;
-/** TEXT GRADIENT */
-color: #c73c3c;
-background-image: -webkit-linear-gradient(0deg, #c73c3c 0%, #fadd00 100%, #bde1af 100%);
-background-clip: text;
--webkit-background-clip: text;
-text-fill-color: transparent;
--webkit-text-fill-color: transparent;
+  /** TEXT GRADIENT */
+  color: #c73c3c;
+  background-image: -webkit-linear-gradient(0deg, #c73c3c 0%, #fadd00 100%, #bde1af 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 div {
@@ -94,7 +94,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  scroll-snap-type: both mandatory; 
+  scroll-snap-type: both mandatory;
   scroll-snap-points-y: repeat(100vh);
 
 }
@@ -125,7 +125,8 @@ body {
   position: relative;
 }
 
-.navbar ul li a, .dropbtn {
+.navbar ul li a,
+.dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -134,7 +135,8 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.navbar ul li a:hover, .dropdown:hover .dropbtn {
+.navbar ul li a:hover,
+.dropdown:hover .dropbtn {
   background-color: rgba(0, 0, 0, 0.9);
   color: #ffffff;
 }
@@ -171,9 +173,11 @@ body {
 }
 
 .textappear {
-  font-size: 7rem; /* Adjust as needed, was 5em */
+  font-size: 7rem;
+  /* Adjust as needed, was 5em */
   font-weight: bold;
-  color: #7319fa; /* Fallback color */
+  color: #7319fa;
+  /* Fallback color */
   background-image: linear-gradient(45deg, #7319fa, #ff33b4, #ff7e29);
   background-clip: text;
   -webkit-background-clip: text;
@@ -182,14 +186,32 @@ body {
 
 }
 
-.stickyscroll{
+.stickyscroll {
   scroll-snap-type: y mandatory;
   scroll-snap-align: start;
   overflow-y: scroll;
 }
-.pastTitle{
-  width: 100%;
-  height:100vh;
+
+.pastTitle {
   display: flex;
 }
 
+.blueGradient {
+  color: #00ffff;
+  background-image: -webkit-linear-gradient(0deg, #00ffff 0%, #401fe0 100%, #5d26bd 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.pinkGradient {
+
+  /** TEXT GRADIENT */
+  color: #4d67fa;
+  background-image: -webkit-linear-gradient(0deg, #4d67fa 0%, #ff00e1 100%, #5d26bd 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}

@@ -94,7 +94,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
   width: 100%;
